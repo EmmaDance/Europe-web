@@ -1,0 +1,46 @@
+<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Playfair+Display|Raleway" rel="stylesheet">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+	<link href="css/lightbox.css" rel="stylesheet">
+	  <link href="css/drop.css" rel="stylesheet">
+	 <script src="js/jquery.min.js"></script> 
+	  <script>
+$(window).ready(function () {
+  $('[data-toggle="tooltip"]').tooltip(); 
+  $('[data-toggle="popover"]').popover();
+ // $('#sc-1').click(function(){
+//	$('#speech').html('Hellooooo there');
+	
+	
+ // });
+ $('body').on('mouseenter','.fa-question-circle',function(){
+		$('#mPopoverBox').css('visibility','visible');
+		$('#mPopoverBox-body').text($(this).attr('bubble-text'));
+		//
+	});
+	 $('body').on('mouseenter','.fa-pencil-square-o',function(){
+		$('#mPopoverBox').css('visibility','visible');
+		$('#mPopoverBox-body').text($(this).attr('bubble-text'));
+		//
+	});
+	$('body').on('mouseleave','.fa-question-circle',function(){
+		$('#mPopoverBox').css('visibility','hidden');
+	});
+	$('body').on('mouseleave','.fa-pencil-square-o',function(){
+		$('#mPopoverBox').css('visibility','hidden');
+	});
+	
+});
+
+</script>
+	 
+  <!-- <script src="https://code.jquery.com/jquery-3.1.1.js"></script>-->
+<!--	<script
+ src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"
+  integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="
+  crossorigin="anonymous"></script>  -->
+  
+  	<script src="js/jquery-ui.js"></script>
